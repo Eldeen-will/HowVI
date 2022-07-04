@@ -1,0 +1,5 @@
+<resources>
+    // Declaração de Strings usadas no Main XML
+    <string name="app_name">App Usuario</string>
+    <string name="titulo">Mural \n Capela Santo Antônio</string>
+</resources>
