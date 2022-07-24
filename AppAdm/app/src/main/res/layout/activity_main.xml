@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/escrever_noticia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/cor_fundo"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEscrever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/cor_botao"
+                android:paddingVertical="10dp"
+                android:textColor="@color/white"
+                android:text="@string/botao_escrever"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:onClick="Escrever"
+                android:textAllCaps="false"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="18dp"/>
+
+
+            <Button
+                android:id="@+id/btnAtualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/cor_botao"
+                android:paddingVertical="10dp"
+                android:textColor="@color/white"
+                android:text="@string/botao_atualizar"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:onClick="Atualizar"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="10dp"/>
+
+            <Button
+                android:id="@+id/btnDeletar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/cor_botao"
+                android:paddingVertical="10dp"
+                android:textColor="@color/white"
+                android:text="@string/botao_deletar"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:onClick="Deletar"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_titulo"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/procura_titulo"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/placeholder_titulo"
+                android:padding="15dp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/procura_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:hint="@string/placeholder_data"
+                android:maxLength="10"
+                android:padding="15dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnProcurar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/botao_procurar"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/cor_botao"
+            />
+
+        <TextView
+            android:id="@+id/mensagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/placeholder_titulo"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/editNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="@string/placeholder_noticia"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="textMultiLine"/>
+
+        <EditText
+            android:id="@+id/editData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/placeholder_data"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:maxLength="10"/>
+
+        <EditText
+            android:id="@+id/editAutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/placeholder_autor"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:maxLines="1"/>
+
+        <Button
+            android:id="@+id/btnPublicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cor_botao"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textColor="@color/white"
+            android:text="@string/botao_publicar"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:onClick="Publicar"/>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+<resources>
+    // Declaração de Strings usadas no Main XML
+    <string name="app_name">App Adm</string>
+    <string name="app_titulo">Escreva um Novo Artigo</string>
+    <string name="placeholder_titulo">Título</string>
+    <string name="placeholder_noticia">Escreva a Notícia</string>
+    <string name="placeholder_data">Data da Publicação</string>
+    <string name="placeholder_autor">Autor</string>
+    <string name="botao_publicar">Publicar Notícia</string>
+    <string name="botao_escrever">Publicar</string>
+    <string name="botao_atualizar">Atualizar</string>
+    <string name="botao_deletar">Deletar</string>
+    <string name="botao_procurar">Procurar</string>
+</resources>
